@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+  <path
+    d="M100 20 C55 20 25 55 25 100 C25 145 55 180 100 180 C145 180 175 145 175 100"
+    stroke="#002B49"
+    stroke-width="18"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <path
+    id="trajectory"
+    d="M35 155 Q70 175 100 130 T145 75"
+    stroke="#00AEEF"
+    stroke-width="3"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <circle cx="145" cy="75" r="14" stroke="#00AEEF" stroke-width="2" fill="none" class="planet-ring" />
+  <circle cx="145" cy="75" r="6" fill="#00AEEF" />
+</svg>

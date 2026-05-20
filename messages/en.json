@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "startProject": "Start Project",
+    "menuLabel": "Navigation"
+  },
+  "hero": {
+    "line1": "Your digital",
+    "line2": "Moonshot",
+    "scroll": "Scroll",
+    "ctaPrimary": "Start project",
+    "ctaSecondary": "View portfolio"
+  },
+  "marquee": {
+    "label": "Services",
+    "items": [
+      "Web Design",
+      "Visual Identity",
+      "Digital Presence",
+      "Brand Strategy",
+      "UI/UX",
+      "Website Development",
+      "Creative Direction",
+      "Motion Design"
+    ]
+  },
+  "services": {
+    "title": "What we do",
+    "subtitle": "Services"
+  },
+  "work": {
+    "title": "Selected Work",
+    "subtitle": "Portfolio",
+    "viewAll": "View all projects",
+    "comingSoon": "Coming soon",
+    "swipe": "Swipe"
+  },
+  "process": {
+    "title": "How we work",
+    "subtitle": "Process"
+  },
+  "philosophy": {
+    "title": "Ambition meets precision",
+    "subtitle": "Philosophy",
+    "body": "Moonshot Consult stands for digital presence that doesn't just look good — it performs. We combine strategic thinking with craftsmanship in design and development. Every pixel, every animation, every interaction is intentional.",
+    "stat1Value": "50+",
+    "stat1Label": "Projects",
+    "stat2Value": "100%",
+    "stat2Label": "Passion",
+    "stat3Value": "∞",
+    "stat3Label": "Ambition"
+  },
+  "testimonials": {
+    "title": "What clients say",
+    "subtitle": "Testimonials"
+  },
+  "cta": {
+    "label": "Moonshot",
+    "title": "Ready for your Moonshot?",
+    "subtitle": "Let's create something extraordinary together.",
+    "button": "Start a project"
+  },
+  "footer": {
+    "tagline": "Digital excellence. Made in Berlin.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "rights": "All rights reserved."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Selected work",
+    "filterAll": "All",
+    "filterWeb": "Web",
+    "filterVisuals": "Visuals",
+    "filterBranding": "Branding",
+    "comingSoon": "Link coming soon"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Start a project",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Project description",
+      "budget": "Budget",
+      "budgetOptions": {
+        "under5k": "Under €5,000",
+        "5to15k": "€5,000 – €15,000",
+        "15to50k": "€15,000 – €50,000",
+        "over50k": "Over €50,000"
+      },
+      "submit": "Send inquiry",
+      "success": "Thank you! We'll be in touch shortly.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email.",
+        "message": "Please describe your project."
+      }
+    },
+    "info": {
+      "title": "Direct contact",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    }
+  },
+  "legal": {
+    "placeholderNotice": "Placeholder text — please have legally reviewed."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content"
+  }
+}
