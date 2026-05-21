@@ -17,8 +17,8 @@ export const legalNotice = {
     {
       heading: { de: "Kontakt", en: "Contact" },
       content: {
-        de: "Telefon: +49 30 1234 5678\nE-Mail: hello@moonshot-consult.de",
-        en: "Phone: +49 30 1234 5678\nEmail: hello@moonshot-consult.de",
+        de: "E-Mail: info@moonshot-consult.de\nStandort: Recklinghausen, Deutschland",
+        en: "Email: info@moonshot-consult.de\nLocation: Recklinghausen, Germany",
       },
     },
     {

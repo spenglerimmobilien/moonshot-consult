@@ -11,10 +11,10 @@ import { cn } from "@/lib/utils";
 
 function ProjectCard({
   project,
-  comingSoon,
+  viewLabel,
 }: {
   project: (typeof featuredProjects)[number];
-  comingSoon: string;
+  viewLabel: string;
 }) {
   return (
     <article className="group relative w-[85vw] shrink-0 snap-center md:w-[60vw] lg:w-[45vw]">
@@ -36,14 +36,18 @@ function ProjectCard({
               </span>
             ))}
           </div>
+          <p className="mt-6 text-xs uppercase tracking-widest text-cyan opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+            {viewLabel} →
+          </p>
         </div>
       </CinematicCard>
       <a
         href={project.url}
-        onClick={(e) => e.preventDefault()}
-        title={comingSoon}
+        target="_blank"
+        rel="noopener noreferrer"
+        title={viewLabel}
         className="absolute inset-0 rounded-2xl"
-        aria-label={`${project.title} – ${comingSoon}`}
+        aria-label={`${project.title} – ${viewLabel}`}
       />
     </article>
   );
@@ -122,7 +126,7 @@ export function WorkSection() {
         )}
       >
         {featuredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} comingSoon={t("comingSoon")} />
+          <ProjectCard key={project.id} project={project} viewLabel={t("viewProject")} />
         ))}
       </div>
     </section>

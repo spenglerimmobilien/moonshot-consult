@@ -132,7 +132,6 @@ export function ContactPageContent() {
             {t("info.title")}
           </h3>
           <InfoRow label={t("info.email")} value={site.email} href={`mailto:${site.email}`} />
-          <InfoRow label={t("info.phone")} value={site.phone} href={`tel:${site.phone.replace(/\s/g, "")}`} />
           <InfoRow
             label={t("info.location")}
             value={getLocalized(site.location, locale)}

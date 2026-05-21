@@ -6,11 +6,10 @@ export const site = {
     de: "Digitale Auftritte, die Eindruck hinterlassen",
     en: "Digital presence that makes an impact",
   } satisfies LocalizedText,
-  email: "hello@moonshot-consult.de",
-  phone: "+49 30 1234 5678",
+  email: "info@moonshot-consult.de",
   location: {
-    de: "Berlin, Deutschland",
-    en: "Berlin, Germany",
+    de: "Recklinghausen, Deutschland",
+    en: "Recklinghausen, Germany",
   } satisfies LocalizedText,
   social: {
     instagram: "#",

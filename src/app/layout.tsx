@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   description:
     "Premium digital agency for websites, visuals, and digital presence.",
   icons: {
-    icon: "/logo-mark.png",
-    apple: "/logo-mark.png",
+    icon: "/logo-mark.svg",
+    apple: "/logo-mark.svg",
   },
 };
 

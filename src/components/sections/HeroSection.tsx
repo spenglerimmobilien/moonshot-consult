@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { useEffect, useRef } from "react";
-import Image from "next/image";
+import { LogoMark } from "@/components/ui/Logo";
 import { useLocale, useTranslations } from "next-intl";
 import { gsap, registerGsap, prefersReducedMotion } from "@/lib/animations/gsap";
 import { site } from "@/data/site";
@@ -97,12 +97,8 @@ export function HeroSection() {
 
       <HeroVisualMobile />
 
-      <Image
-        src="/logo-mark.png"
-        alt=""
-        width={600}
-        height={600}
-        className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 opacity-[0.06] md:block md:right-10"
+      <LogoMark
+        className="pointer-events-none absolute right-0 top-1/2 hidden h-[600px] w-[600px] -translate-y-1/2 opacity-[0.06] md:block md:right-10"
         aria-hidden
       />
 

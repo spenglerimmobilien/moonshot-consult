@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { LogoFull } from "@/components/ui/Logo";
 import { Link } from "@/i18n/navigation";
 import { site } from "@/data/site";
 
@@ -13,13 +13,7 @@ export function Footer() {
     <footer className="border-t border-white/5 bg-surface">
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4 lg:px-8">
         <div className="space-y-4 md:col-span-2">
-          <Image
-            src="/logo-full.png"
-            alt="Moonshot Consult"
-            width={120}
-            height={34}
-            className="h-7 w-auto opacity-90"
-          />
+          <LogoFull className="opacity-90" markClassName="h-7 w-7" />
           <p className="max-w-sm text-sm text-muted">{t("tagline")}</p>
         </div>
 

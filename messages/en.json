@@ -34,7 +34,7 @@
     "title": "Selected Work",
     "subtitle": "Portfolio",
     "viewAll": "View all projects",
-    "comingSoon": "Coming soon",
+    "viewProject": "View website",
     "swipe": "Swipe"
   },
   "process": {
@@ -45,16 +45,12 @@
     "title": "Ambition meets precision",
     "subtitle": "Philosophy",
     "body": "Moonshot Consult stands for digital presence that doesn't just look good — it performs. We combine strategic thinking with craftsmanship in design and development. Every pixel, every animation, every interaction is intentional.",
-    "stat1Value": "50+",
+    "stat1Value": "10+",
     "stat1Label": "Projects",
     "stat2Value": "100%",
     "stat2Label": "Passion",
     "stat3Value": "∞",
     "stat3Label": "Ambition"
-  },
-  "testimonials": {
-    "title": "What clients say",
-    "subtitle": "Testimonials"
   },
   "cta": {
     "label": "Moonshot",
@@ -63,7 +59,7 @@
     "button": "Start a project"
   },
   "footer": {
-    "tagline": "Digital excellence. Made in Berlin.",
+    "tagline": "Digital excellence. Made in Recklinghausen.",
     "navigation": "Navigation",
     "legal": "Legal",
     "imprint": "Imprint",
@@ -73,11 +69,7 @@
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "Selected work",
-    "filterAll": "All",
-    "filterWeb": "Web",
-    "filterVisuals": "Visuals",
-    "filterBranding": "Branding",
-    "comingSoon": "Link coming soon"
+    "viewProject": "View website"
   },
   "contact": {
     "title": "Contact",
@@ -104,7 +96,6 @@
     "info": {
       "title": "Direct contact",
       "email": "Email",
-      "phone": "Phone",
       "location": "Location"
     }
   },

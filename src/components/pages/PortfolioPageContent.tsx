@@ -1,83 +1,56 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { projects } from "@/data/projects";
 import { getLocalized } from "@/lib/utils";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CinematicCard } from "@/components/ui/CinematicCard";
-import { cn } from "@/lib/utils";
-
-const filters = ["all", "web", "visuals", "branding"] as const;
 
 export function PortfolioPageContent() {
   const t = useTranslations("portfolio");
   const locale = useLocale() as "de" | "en";
-  const [active, setActive] = useState<(typeof filters)[number]>("all");
-
-  const filtered = useMemo(() => {
-    if (active === "all") return projects;
-    return projects.filter((p) => p.category.includes(active));
-  }, [active]);
-
-  const filterLabels = {
-    all: t("filterAll"),
-    web: t("filterWeb"),
-    visuals: t("filterVisuals"),
-    branding: t("filterBranding"),
-  };
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading subtitle={t("subtitle")} title={t("title")} />
 
-      <div className="mb-12 flex flex-wrap gap-3" role="group" aria-label={t("title")}>
-        {filters.map((filter) => (
-          <button
-            key={filter}
-            type="button"
-            onClick={() => setActive(filter)}
-            aria-pressed={active === filter}
-            className={cn(
-              "rounded-full border px-5 py-2 text-xs uppercase tracking-widest transition-all duration-300",
-              active === filter
-                ? "border-cyan bg-cyan/10 text-cyan shadow-[0_0_20px_rgba(0,174,239,0.2)]"
-                : "border-white/10 text-white/50 hover:border-white/30 hover:text-white",
-            )}
-          >
-            {filterLabels[filter]}
-          </button>
-        ))}
-      </div>
-
-      <div className="grid gap-8 md:grid-cols-2">
-        {filtered.map((project) => (
-          <article
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
+          <a
             key={project.id}
-            className="group relative transition-transform duration-500 active:scale-[0.98]"
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative block transition-transform duration-500 active:scale-[0.98]"
+            aria-label={`${project.title} – ${t("viewProject")}`}
           >
-            <CinematicCard gradient={project.gradient} className="aspect-[16/10]">
-              <div className="flex h-full flex-col justify-end p-8 opacity-0 transition-all duration-500 group-hover:opacity-100">
-                <p className="text-xs uppercase tracking-widest text-cyan">
+            <CinematicCard gradient={project.gradient} className="aspect-[4/5] md:aspect-[3/4]">
+              <div className="flex h-full flex-col justify-end p-8">
+                <p className="text-xs uppercase tracking-widest text-cyan transition-transform duration-500 group-hover:translate-x-1">
                   {project.client}
                 </p>
-                <h3 className="mt-2 font-display text-2xl uppercase">
+                <h3 className="mt-2 font-display text-2xl uppercase transition-transform duration-500 group-hover:translate-x-2">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-sm text-white/60">
+                <p className="mt-3 text-sm text-white/60 transition-colors duration-300 group-hover:text-white/80">
                   {getLocalized(project.description, locale)}
                 </p>
-                <p className="mt-4 text-xs uppercase tracking-widest text-muted">
-                  {t("comingSoon")}
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/60 backdrop-blur-sm transition-colors duration-300 group-hover:border-cyan/30 group-hover:text-white/80"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <p className="mt-6 text-xs uppercase tracking-widest text-cyan opacity-0 transition-all duration-500 group-hover:opacity-100">
+                  {t("viewProject")} →
                 </p>
               </div>
             </CinematicCard>
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 p-8 transition-opacity duration-500 group-hover:opacity-0">
-              <h3 className="font-display text-xl uppercase text-white">
-                {project.title}
-              </h3>
-            </div>
-          </article>
+          </a>
         ))}
       </div>
     </div>

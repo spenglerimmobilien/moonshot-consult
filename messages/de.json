@@ -34,7 +34,7 @@
     "title": "Ausgewählte Projekte",
     "subtitle": "Portfolio",
     "viewAll": "Alle Projekte",
-    "comingSoon": "Demnächst verfügbar",
+    "viewProject": "Website ansehen",
     "swipe": "Wischen"
   },
   "process": {
@@ -45,16 +45,12 @@
     "title": "Ambition trifft Präzision",
     "subtitle": "Philosophie",
     "body": "Moonshot Consult steht für digitale Auftritte, die nicht nur gut aussehen – sondern wirken. Wir verbinden strategisches Denken mit handwerklicher Exzellenz in Design und Entwicklung. Jeder Pixel, jede Animation, jede Interaktion ist bewusst gesetzt.",
-    "stat1Value": "50+",
+    "stat1Value": "10+",
     "stat1Label": "Projekte",
     "stat2Value": "100%",
     "stat2Label": "Leidenschaft",
     "stat3Value": "∞",
     "stat3Label": "Ambition"
-  },
-  "testimonials": {
-    "title": "Was Kunden sagen",
-    "subtitle": "Stimmen"
   },
   "cta": {
     "label": "Moonshot",
@@ -63,7 +59,7 @@
     "button": "Projekt anfragen"
   },
   "footer": {
-    "tagline": "Digitale Exzellenz. Made in Berlin.",
+    "tagline": "Digitale Exzellenz. Made in Recklinghausen.",
     "navigation": "Navigation",
     "legal": "Rechtliches",
     "imprint": "Impressum",
@@ -73,11 +69,7 @@
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "Ausgewählte Arbeiten",
-    "filterAll": "Alle",
-    "filterWeb": "Web",
-    "filterVisuals": "Visuals",
-    "filterBranding": "Branding",
-    "comingSoon": "Link folgt in Kürze"
+    "viewProject": "Website ansehen"
   },
   "contact": {
     "title": "Kontakt",
@@ -104,7 +96,6 @@
     "info": {
       "title": "Direkter Kontakt",
       "email": "E-Mail",
-      "phone": "Telefon",
       "location": "Standort"
     }
   },

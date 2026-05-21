@@ -4,7 +4,6 @@ import { ServicesSection } from "@/components/sections/ServicesSection";
 import { WorkSection } from "@/components/sections/WorkSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { PhilosophySection } from "@/components/sections/PhilosophySection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CtaSection } from "@/components/sections/CtaSection";
 
 export function LandingPage() {
@@ -16,7 +15,6 @@ export function LandingPage() {
       <WorkSection />
       <ProcessSection />
       <PhilosophySection />
-      <TestimonialsSection />
       <CtaSection />
     </>
   );

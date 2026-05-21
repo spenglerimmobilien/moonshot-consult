@@ -29,10 +29,3 @@ export type Service = {
   description: LocalizedText;
   icon: "globe" | "palette" | "sparkles" | "compass";
 };
-
-export type Testimonial = {
-  id: string;
-  quote: LocalizedText;
-  name: string;
-  role: LocalizedText;
-};

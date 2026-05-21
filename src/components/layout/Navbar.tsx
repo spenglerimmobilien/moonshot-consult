@@ -1,8 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import { LogoFull } from "@/components/ui/Logo";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
@@ -54,15 +54,8 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="relative z-10 shrink-0">
-          <Image
-            src="/logo-full.png"
-            alt="Moonshot Consult"
-            width={140}
-            height={40}
-            className="h-8 w-auto md:h-9"
-            priority
-          />
+        <Link href="/" className="relative z-10 shrink-0" aria-label="Moonshot Consult">
+          <LogoFull />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label={t("menuLabel")}>
