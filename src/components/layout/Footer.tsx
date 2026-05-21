@@ -33,6 +33,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/pricing" className="transition hover:text-cyan">
+                {nav("pricing")}
+              </Link>
+            </li>
+            <li>
               <Link href="/contact" className="transition hover:text-cyan">
                 {nav("contact")}
               </Link>

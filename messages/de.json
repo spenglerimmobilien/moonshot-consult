@@ -2,6 +2,7 @@
   "nav": {
     "home": "Start",
     "portfolio": "Portfolio",
+    "pricing": "Pakete",
     "contact": "Kontakt",
     "startProject": "Projekt starten",
     "menuLabel": "Navigation"
@@ -70,6 +71,34 @@
     "title": "Portfolio",
     "subtitle": "Ausgewählte Arbeiten",
     "viewProject": "Website ansehen"
+  },
+  "pricing": {
+    "title": "Pakete & Leistungsumfang",
+    "subtitle": "Pakete",
+    "intro": "Transparente Orientierung ohne Festpreise — jedes Projekt erhält nach dem Briefing ein individuelles Angebot.",
+    "recommended": "Empfohlen",
+    "requestQuote": "Angebot anfragen",
+    "matrix": {
+      "title": "Was ist enthalten?",
+      "subtitle": "Ein Überblick über Leistungen pro Paket — Details klären wir im Gespräch.",
+      "feature": "Leistung",
+      "included": "Enthalten",
+      "partial": "Optional / erweiterbar",
+      "notIncluded": "Nicht enthalten"
+    },
+    "process": {
+      "title": "So geht es weiter",
+      "subtitle": "Vom ersten Gespräch bis zum Launch — strukturiert und persönlich."
+    },
+    "faq": {
+      "title": "Häufige Fragen"
+    },
+    "cta": {
+      "label": "Moonshot",
+      "title": "Individuelles Angebot gewünscht?",
+      "subtitle": "Beschreiben Sie Ihr Projekt und wählen Sie im Formular Ihren Budget-Rahmen — wir melden uns werktags.",
+      "button": "Projekt anfragen"
+    }
   },
   "contact": {
     "title": "Kontakt",

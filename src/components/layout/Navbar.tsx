@@ -41,6 +41,7 @@ export function Navbar() {
   const links = [
     { href: "/" as const, label: t("home") },
     { href: "/portfolio" as const, label: t("portfolio") },
+    { href: "/pricing" as const, label: t("pricing") },
     { href: "/contact" as const, label: t("contact") },
   ];
 

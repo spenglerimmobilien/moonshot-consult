@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "portfolio": "Portfolio",
+    "pricing": "Pricing",
     "contact": "Contact",
     "startProject": "Start Project",
     "menuLabel": "Navigation"
@@ -70,6 +71,34 @@
     "title": "Portfolio",
     "subtitle": "Selected work",
     "viewProject": "View website"
+  },
+  "pricing": {
+    "title": "Packages & scope",
+    "subtitle": "Pricing",
+    "intro": "Clear guidance without fixed prices — every project receives a tailored proposal after the briefing.",
+    "recommended": "Recommended",
+    "requestQuote": "Request a quote",
+    "matrix": {
+      "title": "What's included?",
+      "subtitle": "An overview of services per package — we'll clarify details in conversation.",
+      "feature": "Service",
+      "included": "Included",
+      "partial": "Optional / expandable",
+      "notIncluded": "Not included"
+    },
+    "process": {
+      "title": "What happens next",
+      "subtitle": "From first conversation to launch — structured and personal."
+    },
+    "faq": {
+      "title": "Frequently asked questions"
+    },
+    "cta": {
+      "label": "Moonshot",
+      "title": "Want a tailored proposal?",
+      "subtitle": "Describe your project and select your budget range in the form — we'll get back to you on business days.",
+      "button": "Start a project"
+    }
   },
   "contact": {
     "title": "Contact",

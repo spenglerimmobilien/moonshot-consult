@@ -29,3 +29,27 @@ export type Service = {
   description: LocalizedText;
   icon: "globe" | "palette" | "sparkles" | "compass";
 };
+
+export type PricingTierId = "essentials" | "business" | "custom";
+
+export type PricingTier = {
+  id: PricingTierId;
+  title: LocalizedText;
+  description: LocalizedText;
+  highlights: LocalizedText[];
+  recommended?: boolean;
+};
+
+export type PricingFeatureAvailability = "yes" | "no" | "partial";
+
+export type PricingFeature = {
+  id: string;
+  label: LocalizedText;
+  availability: Record<PricingTierId, PricingFeatureAvailability>;
+};
+
+export type PricingFaq = {
+  id: string;
+  question: LocalizedText;
+  answer: LocalizedText;
+};

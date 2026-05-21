@@ -43,6 +43,20 @@ export const projects: Project[] = [
     featured: true,
     gradient: "linear-gradient(135deg, #0a1628 0%, #1e3a5f 55%, #7eb8da33 100%)",
   },
+  {
+    id: "md-bauelemente",
+    title: "MD Bauelemente",
+    client: "Fensterbauer · Haltern am See",
+    category: "web",
+    tags: ["Web Design", "Handwerk", "Konfigurator"],
+    description: {
+      de: "Digitale Fenster- und Türen-Website mit Kostenschätzung, Haustür-Konfigurator und Terminbuchung — einfach, zuverlässig, regional.",
+      en: "Digital windows and doors website with cost estimation, front door configurator, and appointment booking — simple, reliable, and local.",
+    },
+    url: "https://www.md-bauelemente.de/",
+    featured: true,
+    gradient: "linear-gradient(135deg, #0c1410 0%, #1a3328 50%, #4a9e7844 100%)",
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);
